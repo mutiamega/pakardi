@@ -1,0 +1,963 @@
+2017/10/18 02:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pakardi/index.php?r=gii
+---
+2017/10/18 03:52:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "barang".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('barang')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('barang')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/barang')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=site/barang
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang
+---
+2017/10/18 03:53:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "barang".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('barang')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('barang')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/barang/ind...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=site/barang/index.php
+HTTP_REFERER=http://localhost/pakardi/index.php?r=site/index
+---
+2017/10/18 03:54:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "../barang".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('../barang')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pakardi/index.php?r=../barang
+HTTP_REFERER=http://localhost/pakardi/index.php?r=site/page&view=about
+---
+2017/10/18 03:54:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "barang".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('barang')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('barang')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/barang')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=site/barang
+HTTP_REFERER=http://localhost/pakardi/index.php?r=site/contact
+---
+2017/10/18 12:37:07 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/admin')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/admin
+HTTP_REFERER=http://localhost/pakardi/index.php?r=site/login
+---
+2017/10/18 12:47:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php:161
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(55): BarangController->loadModel('')
+#1 [internal function]: BarangController->actionView('')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/create
+---
+2017/10/18 12:48:15 [error] [php] move_uploaded_file(C:\xampp\htdocs\pakardi\protected/images/3719255-cute-monster.jpg): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\web\CUploadedFile.php:201)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BarangController->actionCreate()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BarangController->runAction()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BarangController->filterAccessControl()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): BarangController->runActionWithFilters()
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BarangController->run()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\pakardi\index.php(13): CWebApplication->run()
+REQUEST_URI=/pakardi/index.php?r=barang/create
+in C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php (77)
+in C:\xampp\htdocs\pakardi\index.php (13)
+2017/10/18 12:52:15 [error] [exception.CException] exception 'CException' with message 'Property "Barang.image" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(145): CComponent->__get('image')
+#1 C:\xampp\htdocs\pakardi\protected\views\barang\view.php(31): CActiveRecord->__get('image')
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(56): CController->render('view', Array)
+#7 [internal function]: BarangController->actionView('3')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=3
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/create
+---
+2017/10/18 12:58:51 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.label" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('label', 'Gambar')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\pakardi\protected\views\barang\admin.php(61): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#10 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(147): CController->render('admin', Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BarangController->actionAdmin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/admin')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/admin
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=2
+---
+2017/10/18 13:00:05 [error] [exception.CException] exception 'CException' with message 'Property "CDataColumn.label" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(220): CComponent->__set('label', 'Gambar')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(388): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(359): CGridView->initColumns()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CGridView->init()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\pakardi\protected\views\barang\admin.php(61): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('admin', Array, true)
+#10 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(147): CController->render('admin', Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BarangController->actionAdmin()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('admin')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/admin')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/admin
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=2
+---
+2017/10/18 14:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 15:41:01 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.fbLikeShareButton.fbLikeShareButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BarangController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\pakardi\protected\views\barang\view.php(47): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(56): CController->render('view', Array)
+#9 [internal function]: BarangController->actionView('1')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=1
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang
+---
+2017/10/18 15:41:26 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.fbLikeShareButton.fbLikeShareButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BarangController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\pakardi\protected\views\barang\view.php(47): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(56): CController->render('view', Array)
+#9 [internal function]: BarangController->actionView('2')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=2
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang
+---
+2017/10/18 15:41:44 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.fbLikeShareButton.fbLikeShareButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BarangController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\pakardi\protected\views\barang\view.php(47): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(56): CController->render('view', Array)
+#9 [internal function]: BarangController->actionView('1')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=1
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang
+---
+2017/10/18 15:43:39 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.fbLikeShareButton.fbLikeShareButton" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(146): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(BarangController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(181): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\pakardi\protected\views\barang\view.php(47): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('view', Array, true)
+#8 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(56): CController->render('view', Array)
+#9 [internal function]: BarangController->actionView('1')
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('view')
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=1
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/
+---
+2017/10/18 16:13:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii\framework\web\CController.php:1121
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/delete')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/delete&id=1
+HTTP_REFERER=http://localhost/pakardi/index.php?r=site/login
+---
+2017/10/18 16:14:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:16:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "main".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('main')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('main')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/main')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/main
+---
+2017/10/18 16:20:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:20:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:21:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:21:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:22:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 16:22:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\yii\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:11:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\pakardi\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:11:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\pakardi\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:13:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\pakardi\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\pakardi\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:13:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "share".' in C:\xampp\htdocs\pakardi\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(270): CController->missingAction('share')
+#1 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#2 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#3 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:16:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#8 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#9 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:16:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#8 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#9 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:20:39 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#8 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#9 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:21:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php:183
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('share')
+#8 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/share')
+#9 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\pakardi\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/share
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/view&id=1
+---
+2017/10/18 17:23:04 [error] [php] Undefined variable: model (C:\xampp\htdocs\pakardi\protected\views\barang\share.php:18)
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\CController.php(872): BarangController->renderFile()
+#1 C:\xampp\htdocs\pakardi\framework\web\CController.php(785): BarangController->renderPartial()
+#2 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(160): BarangController->render()
+#3 C:\xampp\htdocs\pakardi\framework\web\actions\CInlineAction.php(49): BarangController->actionShare()
+#4 C:\xampp\htdocs\pakardi\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): BarangController->runAction()
+#6 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): BarangController->filterAccessControl()
+#9 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): BarangController->runActionWithFilters()
+#12 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): BarangController->run()
+#13 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\pakardi\index.php(13): CWebApplication->run()
+REQUEST_URI=/pakardi/index.php?r=barang/share
+in C:\xampp\htdocs\pakardi\protected\views\barang\share.php (18)
+in C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php (160)
+in C:\xampp\htdocs\pakardi\index.php (13)
+2017/10/18 17:39:14 [error] [php] Undefined index: button_count (C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\views\fb.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\widgets\CWidget.php(244): fbLikeShareButton->renderFile()
+#1 C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php(66): fbLikeShareButton->render()
+#2 C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php(44): fbLikeShareButton->renderFbButton()
+#3 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(147): fbLikeShareButton->init()
+#4 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(181): BarangController->createWidget()
+#5 C:\xampp\htdocs\pakardi\protected\views\barang\share.php(20): BarangController->widget()
+#6 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(95): BarangController->renderInternal()
+#8 C:\xampp\htdocs\pakardi\framework\web\CController.php(872): BarangController->renderFile()
+#9 C:\xampp\htdocs\pakardi\framework\web\CController.php(785): BarangController->renderPartial()
+#10 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(160): BarangController->render()
+#11 C:\xampp\htdocs\pakardi\framework\web\actions\CInlineAction.php(49): BarangController->actionShare()
+#12 C:\xampp\htdocs\pakardi\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): BarangController->runAction()
+#14 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): BarangController->filterAccessControl()
+#17 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): BarangController->runActionWithFilters()
+#20 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): BarangController->run()
+#21 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CWebApplication->run()
+REQUEST_URI=/pakardi/index.php?r=barang/share
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\views\fb.php (13)
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php (66)
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php (44)
+2017/10/18 18:34:28 [error] [php] Undefined index: http://192.168.43.15/pakardi/index.php?r=barang/view&id=1 (C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\views\fb.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\pakardi\framework\web\widgets\CWidget.php(244): fbLikeShareButton->renderFile()
+#1 C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php(66): fbLikeShareButton->render()
+#2 C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php(44): fbLikeShareButton->renderFbButton()
+#3 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(147): fbLikeShareButton->init()
+#4 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(181): BarangController->createWidget()
+#5 C:\xampp\htdocs\pakardi\protected\views\barang\share.php(20): BarangController->widget()
+#6 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(126): require()
+#7 C:\xampp\htdocs\pakardi\framework\web\CBaseController.php(95): BarangController->renderInternal()
+#8 C:\xampp\htdocs\pakardi\framework\web\CController.php(872): BarangController->renderFile()
+#9 C:\xampp\htdocs\pakardi\framework\web\CController.php(785): BarangController->renderPartial()
+#10 C:\xampp\htdocs\pakardi\protected\controllers\BarangController.php(160): BarangController->render()
+#11 C:\xampp\htdocs\pakardi\framework\web\actions\CInlineAction.php(49): BarangController->actionShare()
+#12 C:\xampp\htdocs\pakardi\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): BarangController->runAction()
+#14 C:\xampp\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 C:\xampp\htdocs\pakardi\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): BarangController->filterAccessControl()
+#17 C:\xampp\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#19 C:\xampp\htdocs\pakardi\framework\web\CController.php(265): BarangController->runActionWithFilters()
+#20 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(282): BarangController->run()
+#21 C:\xampp\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 C:\xampp\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\pakardi\index.php(13): CWebApplication->run()
+REQUEST_URI=/pakardi/index.php?r=barang/share
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\views\fb.php (13)
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php (66)
+in C:\xampp\htdocs\pakardi\protected\extensions\fbLikeShareButton\fbLikeShareButton.php (44)
+2017/10/19 05:31:46 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in E:\Software\Xampp7\htdocs\pakardi\protected\controllers\BarangController.php:176
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\protected\controllers\BarangController.php(55): BarangController->loadModel('')
+#1 [internal function]: BarangController->actionView('')
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#14 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=
+HTTP_REFERER=http://localhost/pakardi/index.php?r=barang/create
+---
+2017/10/19 06:12:33 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:13:20 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:14:12 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:15:45 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "barang;src=sdkpreparse". in E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang;src=sdkp...')
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%3Bsrc%3Dsdkpreparse
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:17:27 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:23:24 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:24:39 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%2Fview
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:37:35 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "barang%2view". in E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang%2view')
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%252view
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:40:02 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+HTTP_REFERER=http://192.168.43.148/pakardi/
+---
+2017/10/19 06:40:02 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:40:03 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:40:03 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:41:42 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "barang%2view". in E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php:286
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang%2view')
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pakardi/index.php?r=barang%252view
+HTTP_REFERER=https://www.facebook.com/
+---
+2017/10/19 06:52:19 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+HTTP_REFERER=http://192.168.43.148/pakardi/
+---
+2017/10/19 06:52:19 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:52:20 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:52:20 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php:337
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&amp;id=1
+---
+2017/10/19 06:59:55 [error] [exception.CHttpException.404] CHttpException: The requested page does not exist. in E:\Software\Xampp7\htdocs\pakardi\protected\controllers\BarangController.php:176
+Stack trace:
+#0 E:\Software\Xampp7\htdocs\pakardi\protected\controllers\BarangController.php(55): BarangController->loadModel('3')
+#1 [internal function]: BarangController->actionView('3')
+#2 E:\Software\Xampp7\htdocs\pakardi\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(BarangController), Array)
+#3 E:\Software\Xampp7\htdocs\pakardi\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(BarangController), Object(ReflectionMethod), Array)
+#4 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#8 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 E:\Software\Xampp7\htdocs\pakardi\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(291): CFilterChain->run()
+#11 E:\Software\Xampp7\htdocs\pakardi\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(282): CController->run('view')
+#13 E:\Software\Xampp7\htdocs\pakardi\framework\web\CWebApplication.php(141): CWebApplication->runController('barang/view')
+#14 E:\Software\Xampp7\htdocs\pakardi\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 E:\Software\Xampp7\htdocs\pakardi\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/pakardi/index.php?r=barang/view&id=3
+---
